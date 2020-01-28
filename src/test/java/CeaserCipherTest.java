@@ -27,4 +27,10 @@ public class CeaserCipherTest {
             assertEquals("B",testCeaserCipher.cipheredWord());
 
         }
+        // when given a string with more than one more than one characters e.g ABCEDE
+        @Test
+    public  void check_encription_ofMorethanOneString()throws Exception{
+            CeaserCipher testCeaserCipher = new CeaserCipher("AB",1);
+            assertEquals("BC",testCeaserCipher.cipheredWord());
+        }
 }
