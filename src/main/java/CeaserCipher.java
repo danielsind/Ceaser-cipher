@@ -1,6 +1,7 @@
 public class CeaserCipher {
  private String word;
  private int key;
+ public String newWord = "";
  public CeaserCipher(String word,int key){
   this.word = word;
   this.key = key;
@@ -13,7 +14,10 @@ public class CeaserCipher {
   return this.key;
  }
  // created a method that gives a string as an output;
- public String cipheredWord(){
-
+ public String cipheredWord() {
+  int newValue = ((int) ((word.charAt(0))) + key - 65) % 26 + 65;
+  char charValue = (char) (newValue);
+  newWord += charValue;
+  return newWord;
  }
 }
