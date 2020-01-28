@@ -20,6 +20,7 @@ public class CeaserDecipherTest {
     }
     @Test
     public void checkDecipherForSmallCase(){
-        CeaserDecipher
+        CeaserDecipher testDecipher = new CeaserDecipher("d",1);
+        assertEquals("c",testDecipher.decipheredWord());
     }
 }
