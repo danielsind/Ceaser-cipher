@@ -16,9 +16,16 @@ public class CeaserCipher {
  // created a method that gives a string as an output;
  public String cipheredWord() {
   for (int i = 0; i < this.word.length(); ++i) {
-   int newValue = ((int) ((word.charAt(i))) + key - 65) % 26 + 65;
+   if (Character.isLowerCase(this.word.charAt(i))){
+   int newValue = ((int) ((word.charAt(i))) + key - 97) % 26 + 97;
    char charValue = (char) (newValue);
    newWord += charValue;
+  }
+   else if (Character.isUpperCase(this.word.charAt(i))){
+     int newValue = ((int) ((word.charAt(i))) + key - 65) % 26 + 65;
+     char charValue = (char) (newValue);
+     newWord += charValue;
+   }
   }
   return newWord;
  }
