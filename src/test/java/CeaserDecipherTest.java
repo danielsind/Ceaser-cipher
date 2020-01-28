@@ -7,4 +7,10 @@ public class CeaserDecipherTest {
         CeaserDecipher testDecipher = new CeaserDecipher("A",1);
         assertEquals(true,testDecipher instanceof CeaserDecipher );
     }
+    @Test
+    public void canGetWord_andKey()throws Exception{
+        CeaserDecipher testDecipher = new CeaserDecipher("A",1);
+        assertEquals("A",testDecipher.getWord());
+        assertEquals(1,testDecipher.getKey());
+    }
 }
