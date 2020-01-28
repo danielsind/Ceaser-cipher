@@ -18,4 +18,8 @@ public class CeaserDecipherTest {
         CeaserDecipher testDecipher = new CeaserDecipher("B",1);
         assertEquals("A",testDecipher.decipheredWord());
     }
+    @Test
+    public void checkDecipherForSmallCase(){
+        CeaserDecipher
+    }
 }
