@@ -39,5 +39,11 @@ public class CeaserCipherTest {
             CeaserCipher testCeaserCipher = new CeaserCipher("ab",1);
             assertEquals("bc",testCeaserCipher.cipheredWord());
        }
+       // when supplied with a sentence should return spaces as spaces
+       @Test
+    public void check_Encription_of_SpacesAnd() throws Exception{
+            CeaserCipher testCeaserCipher = new CeaserCipher("AB BC",1);
+            assertEquals("BC CD",testCeaserCipher.cipheredWord());
+       }
 
 }

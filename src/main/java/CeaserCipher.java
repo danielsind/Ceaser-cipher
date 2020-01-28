@@ -26,6 +26,9 @@ public class CeaserCipher {
      char charValue = (char) (newValue);
      newWord += charValue;
    }
+   else {
+    newWord += this.word.charAt(i);
+   }
   }
   return newWord;
  }
