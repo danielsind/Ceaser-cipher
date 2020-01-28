@@ -15,9 +15,11 @@ public class CeaserCipher {
  }
  // created a method that gives a string as an output;
  public String cipheredWord() {
-  int newValue = ((int) ((word.charAt(0))) + key - 65) % 26 + 65;
-  char charValue = (char) (newValue);
-  newWord += charValue;
+  for (int i = 0; i < this.word.length(); ++i) {
+   int newValue = ((int) ((word.charAt(i))) + key - 65) % 26 + 65;
+   char charValue = (char) (newValue);
+   newWord += charValue;
+  }
   return newWord;
  }
 }
