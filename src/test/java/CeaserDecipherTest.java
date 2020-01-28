@@ -23,4 +23,9 @@ public class CeaserDecipherTest {
         CeaserDecipher testDecipher = new CeaserDecipher("d",1);
         assertEquals("c",testDecipher.decipheredWord());
     }
+    @Test
+    public void checkForSpace(){
+        CeaserDecipher testDecipher = new CeaserDecipher("AB AB",1);
+        assertEquals("ZA ZA",testDecipher.decipheredWord());
+    }
 }
