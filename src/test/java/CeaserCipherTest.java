@@ -45,5 +45,10 @@ public class CeaserCipherTest {
             CeaserCipher testCeaserCipher = new CeaserCipher("AB BC",1);
             assertEquals("BC CD",testCeaserCipher.cipheredWord());
        }
-
+       // when supplied with a string of Upper and LowerCase\
+    @Test
+    public  void check_a_WIErdStriNG_mixedUpperANdLower()throws Exception{
+            CeaserCipher testCeaserCipher = new CeaserCipher("aB",1);
+            assertEquals("bC",testCeaserCipher.cipheredWord());
+    }
 }
