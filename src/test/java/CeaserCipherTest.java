@@ -20,4 +20,9 @@ public class CeaserCipherTest {
             CeaserCipher testCeaserCpher = new CeaserCipher("A",1);
             assertEquals(true,testCeaserCpher instanceof CeaserCipher );
         }
+        @Test
+    public void checkFor_encription_GivenTheWord_And_aKey() throws Exception{
+            CeaserCipher testCeaserCipher = new CeaserCipher("A",1);
+            assertEquals("B",testCeaserCipher.cipher());
+        }
 }
