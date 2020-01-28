@@ -17,12 +17,8 @@ public class App {
             CeaserCipher ceaserCipher = new CeaserCipher(userWord,intUserKey);
             String ceaserOutPut = ceaserCipher.cipheredWord();
             System.out.println("Your Ceaser Cypher is " + ceaserOutPut);
-
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 }
