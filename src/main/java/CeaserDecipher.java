@@ -15,10 +15,19 @@ public class CeaserDecipher {
     int getKey() {
       return this.key;
     }
-   String decipheredWord(){
-       int newValue = ((int) ((word.charAt(0))) +(26 -key) - 65)% 26 + 65;
-       char charValue = (char) (newValue);
-       newDecipheredWord += charValue;
+   String decipheredWord() {
+        for (int i = 0; i < word.length(); ++i) {
+            if (Character.isUpperCase(this.word.charAt(i))) {
+                int newValue = ((int) ((word.charAt(0))) + (26 - key) - 65) % 26 + 65;
+                char charValue = (char) (newValue);
+                newDecipheredWord += charValue;
+            }
+            else if (Character.isLowerCase(this.word.charAt(i))) {
+                int newValue = ((int) ((word.charAt(0))) + (26 - key) - 97) % 26 + 97;
+                char charValue = (char) (newValue);
+                newDecipheredWord += charValue;
+            }
+            }
        return newDecipheredWord;
-    }
-}
+        }
+   }
