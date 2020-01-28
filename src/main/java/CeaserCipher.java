@@ -1,7 +1,7 @@
 public class CeaserCipher {
  private String word;
  private int key;
- public String newWord = "";
+ private String newWord = "";
  public CeaserCipher(String word,int key){
   this.word = word;
   this.key = key;

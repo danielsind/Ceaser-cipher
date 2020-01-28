@@ -1,8 +1,17 @@
 public class CeaserDecipher {
-public String word;
-public int key ;
+    private String word;
+    private int key;
 
-public CeaserDecipher(String word,int key){
+    public CeaserDecipher(String word, int key) {
+        this.word = word;
+        this.key = key;
+    }
 
+    String getWord() {
+      return this.word;
+    }
+
+    int getKey() {
+      return this.key;
     }
 }
