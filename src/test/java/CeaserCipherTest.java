@@ -12,6 +12,7 @@ public class CeaserCipherTest {
         //check if it can be an instance of a string;
         @Test
     public void newCipher_InstanceOfString() throws Exception{
-            CeaserCipher testCeaserCipher = new CeaserCipher("A");
+            CeaserCipher testCeaserCipher = new CeaserCipher("");
+            assertEquals("",testCeaserCipher instanceof CeaserCipher);
         }
 }
