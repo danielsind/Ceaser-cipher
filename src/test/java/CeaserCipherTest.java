@@ -33,4 +33,11 @@ public class CeaserCipherTest {
             CeaserCipher testCeaserCipher = new CeaserCipher("AB",1);
             assertEquals("BC",testCeaserCipher.cipheredWord());
         }
+        // when supplied with a String that is of lowercase
+       @Test
+    public void check_Encription_of_SmallCaseLetters()throws Exception{
+            CeaserCipher testCeaserCipher = new CeaserCipher("ab",1);
+            assertEquals("bc",testCeaserCipher.cipheredWord());
+       }
+
 }
