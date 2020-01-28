@@ -15,4 +15,9 @@ public class CeaserCipherTest {
             CeaserCipher testCeaserCipher = new CeaserCipher("A");
             assertEquals(true,testCeaserCipher instanceof CeaserCipher);
         }
+        @Test
+    public void checkFor_AnInstanceOfAn_integer()throws Exception{
+            CeaserCipher testCeaserCpher = new CeaserCipher("A",1);
+            assertEquals(true,testCeaserCpher instanceof CeaserCipher );
+        }
 }
