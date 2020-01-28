@@ -13,4 +13,9 @@ public class CeaserDecipherTest {
         assertEquals("A",testDecipher.getWord());
         assertEquals(1,testDecipher.getKey());
     }
+    @Test
+    public void checkForDecipherMethod(){
+        CeaserDecipher testDecipher = new CeaserDecipher("B",1);
+        assertEquals("A",testDecipher.decipheredWord());
+    }
 }
